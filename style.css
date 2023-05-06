@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1e23;
+    background: url(bg-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.login-form{
+    width: 28vw;
+    min-height: 75vh;
+    background-color: #25242a;
+    padding:2rem;
+    border-radius: 1rem;
+}
+
+.login-form .title{
+    color: #f9f9f9;
+    font-size: 2.8rem;
+    font-weight: 400;
+    letter-spacing: 0.09rem;
+    text-align: center;
+}
+
+.login-form .input-container{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.input-container .input-element{
+    position: relative;
+    width: 100%;
+}
+
+.input-element input{
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0rem;
+    background-color: #1e1d22;
+    color:#e9e9e9 ;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1.6rem;
+    outline: none;
+
+}
+
+.input-element i{
+    position: absolute;
+    top: 32%;
+    transform: translateY(-50%);
+    right: 1rem;
+    color: #666;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.input-element  input:focus ~i,
+.input-element  input:valid ~i{
+    color: #e9e9e9;
+}
+
+.login-form .check-box-container{
+display: flex;
+width: 100%;
+margin-top: 0.5rem;
+font-size: 1rem;
+}
+
+.check-box-container span{
+    margin-left: 0.4rem;
+    color: #888;
+}
+
+.check-box-container .reset-pass{
+    color: dodgerblue;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.login-form .input-btn button{
+    width: 100%;
+    margin: 2rem 0rem;
+    background-color: dodgerblue;
+    color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 1.65rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.01rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s ;
+}
+
+.login-form .input-btn button:hover{
+    background-color: #f9f9f9;
+    color: dodgerblue;
+}
+
+.login-form .login-opt2{
+    position: relative;
+    text-align: center;
+}
+
+.login-opt2 p{
+    position: relative;
+    display: inline-block;
+    color: #888;
+}
+
+.login-form .social-media-container{
+    position: relative;
+    margin: 1.65rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 1.1rem;
+}
+
+.social-media-container a{
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    color: dodgerblue;
+    text-decoration: none;
+    border-radius: 50%;
+    overflow: hidden ;
+    box-shadow: 0rem 0rem 0.7rem rgba(0, 0, 0, 0.15);
+    transition: all 0.3s;
+}
+
+.social-media-container a:hover{
+    background-color: dodgerblue;
+    color: #f9f9f9;
+}
+
+.login-form .signup-link{
+    border-top: 1px solid #393840;
+    padding-top: 1.3rem;
+    text-align: center;
+}
+
+.signup-link span{
+color: #888;
+}
+
+.signup-link a{
+    color: dodgerblue;
+    text-decoration: none;
+    margin-left: 0.15rem;
+}
